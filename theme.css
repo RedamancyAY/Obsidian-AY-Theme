@@ -1,5 +1,3 @@
-@import "callout.css";
-
 body {
 	--font-adaptive-normal: 18px;
 	--line-height: 1.65;
@@ -397,6 +395,71 @@ span.external-link {
 
 
 
+/* ----------------------00-图片---------------------- */
+
+.image_hover img:hover {
+    transform: scale(1.2);
+}
+
+.image_hover img {
+    transform: scale(1.0);
+    /* margin-top: -5pt; */
+    /* margin-bottom: -5pt; */
+    /* width: 50%; */
+    transition: transform 0.25s ease;
+}
+
+.image_center img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* 添加圆角 */
+img {
+    border-radius: var(--image-border-radius);
+}
+
+/* caption */
+figcaption.obsidian-image-caption {
+    text-align: center;
+    padding-right: 0.05em;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #f55454;
+    background-image: linear-gradient(120deg, #d373d0 0%, #cf08f2 80%);
+    word-break: break-all;
+    font-size: 12px;
+}
+
+/* Image caption */
+.image-captions-figure {
+    border-radius: var(--image-border-radius);
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.image-captions-caption {
+    text-align: center;
+    padding-right: 0.05em;
+    word-break: break-all;
+    font-size: 12px;
+    color: #cf08f2;
+}
+
+/* Image: display two iamges in one row  */
+.image-row-2 {
+    display: flex;
+    margin: auto !important;
+    border: 5px solid;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+
+
 
 /* @settings
 
@@ -457,7 +520,30 @@ settings:
         type: class-toggle
 
 
-
+    - 
+        id: 0-image
+        title: 00-图片
+        type: heading
+        collapsed: true
+        level: 1
+    -
+        id: image_center
+        title: float image to center of the line
+        title.zh: 图片居中表示
+        type: class-toggle
+        default: true
+    -
+        id: image_hover
+        title: hover and enlarge the image
+        title.zh: 图片悬浮变大
+        type: class-toggle
+        default: true
+    - 
+        id: image-border-radius
+        title: 图像圆角大小（px）
+        type: variable-number
+        default: 8
+        format: px
 
 
 
