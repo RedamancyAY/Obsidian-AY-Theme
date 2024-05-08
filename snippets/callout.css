@@ -1,0 +1,924 @@
+/* 自定义 callout blocks */
+/* 用 callout blocks 实现高亮块功能 */
+
+.callout[data-callout="orange"] {
+    --callout-color: 254, 234, 210;
+}
+
+.callout[data-callout="orange"] {
+    border: 1px solid rgb(254, 212, 164);
+    color: rgb(222, 120, 2);
+    border-radius: 5px;
+    background-color: rgba(var(--callout-color));
+}
+
+.callout[data-callout="orange"] .callout-title {
+    display: none;
+}
+
+
+.callout[data-callout="light-orange"] {
+    --callout-color: 255, 245, 235;
+}
+
+.callout[data-callout="light-orange"] {
+    border: 1px solid rgb(254, 212, 164);
+    color: rgb(222, 120, 2);
+    border-radius: 5px;
+    background-color: rgba(var(--callout-color));
+}
+
+.callout[data-callout="light-orange"] .callout-title {
+    display: none;
+}
+
+
+.callout[data-callout="blue"] {
+    --callout-color: 225, 234, 255;
+}
+
+.callout[data-callout="blue"] {
+    border: 1px solid rgb(130, 167, 252);
+    color: rgb(0, 2, 7);
+    border-radius: 5px;
+    background-color: rgba(var(--callout-color));
+}
+
+.callout[data-callout="blue"] .callout-title {
+    display: none;
+}
+
+
+.callout[data-callout="light-blue"] {
+    --callout-color: 240, 244, 255;
+}
+
+.callout[data-callout="light-blue"] {
+    border: 1px solid rgb(186, 206, 253);
+    color: rgb(36, 91, 219);
+    border-radius: 5px;
+    background-color: rgba(var(--callout-color));
+}
+
+.callout[data-callout="light-blue"] .callout-title {
+    display: none;
+}
+
+
+.callout[data-callout="light-red"] {
+    --callout-color: 254, 241, 241;
+}
+
+.callout[data-callout="light-red"] {
+    border: 1px solid rgb(251, 191, 188);
+    color: rgb(216, 57, 49);
+    border-radius: 5px;
+    background-color: rgba(var(--callout-color));
+}
+
+.callout[data-callout="light-red"] .callout-title {
+    display: none;
+}
+
+
+.callout[data-callout="red"] {
+    --callout-color: 253, 226, 226;
+}
+
+.callout[data-callout="red"] {
+    border: 1px solid rgb(249, 142, 139);
+    color: rgb(216, 57, 49);
+    border-radius: 5px;
+    background-color: rgba(var(--callout-color));
+}
+
+.callout[data-callout="red"] .callout-title {
+    display: none;
+}
+
+
+.callout[data-callout="green"] {
+    --callout-color: 217, 245, 214;
+}
+
+.callout[data-callout="green"] {
+    border: 1px solid rgb(142, 224, 133);
+    color: rgb(46, 161, 33);
+    border-radius: 5px;
+    background-color: rgba(var(--callout-color));
+}
+
+.callout[data-callout="green"] .callout-title {
+    display: none;
+}
+
+
+.callout[data-callout="light-green"] {
+    --callout-color: 240, 251, 239;
+}
+
+.callout[data-callout="light-green"] {
+    border: 1px solid rgb(183, 237, 177);
+    color: rgb(46, 161, 33);
+    border-radius: 5px;
+    background-color: rgba(var(--callout-color));
+}
+
+.callout[data-callout="light-green"] .callout-title {
+    display: none;
+}
+
+
+.callout[data-callout="purple"] {
+    --callout-color: 236, 226, 254;
+}
+
+.callout[data-callout="purple"] {
+    border: 1px solid rgb(173, 130, 247);
+    color: rgb(100, 37, 208);
+    border-radius: 5px;
+    background-color: rgba(var(--callout-color));
+}
+
+.callout[data-callout="purple"] .callout-title {
+    display: none;
+}
+
+
+.callout[data-callout="light-purple"] {
+    --callout-color: 246, 241, 254;
+}
+
+.callout[data-callout="light-purple"] {
+    border: 1px solid rgb(205, 178, 250);
+    color: rgb(100, 37, 208);
+    border-radius: 5px;
+    background-color: rgba(var(--callout-color));
+}
+
+.callout[data-callout="light-purple"] .callout-title {
+    display: none;
+}
+
+
+.callout[data-callout="gray"] {
+    --callout-color: 245, 246, 247;
+}
+
+.callout[data-callout="gray"] {
+    border: 1px solid rgb(187, 191, 196);
+    color: rgb(143, 149, 158);
+    border-radius: 5px;
+    background-color: rgba(var(--callout-color));
+}
+
+.callout[data-callout="gray"] .callout-title {
+    display: none;
+}
+
+
+.callout[data-callout="light-gray"] {
+    --callout-color: 248, 249, 250;
+}
+
+.callout[data-callout="light-gray"] {
+    border: 1px solid rgb(222, 224, 227);
+    color: rgb(143, 149, 158);
+    border-radius: 5px;
+    background-color: rgba(var(--callout-color));
+}
+
+.callout[data-callout="light-gray"] .callout-title {
+    display: none;
+}
+
+
+
+
+/* -------------------分两栏---------------------- */
+
+/* 两栏功能的主要实现---左分栏 */
+.callout[data-callout="col2-left"],
+.callout[data-callout="col2-left-lightorange"] {
+    width: calc((100% - 30px) * 0.5);
+    float: left;
+    margin-right: 30px;
+}
+
+
+/* 两栏功能的主要实现---右分栏 */
+.callout[data-callout="col2-right"],
+.callout[data-callout="col2-right-pink"] {
+    width: calc((100% - 30px) * 0.5);
+    float: right;
+}
+
+
+/* 白色背景的左分栏 */
+.callout[data-callout="col2-left"] {
+    --callout-color: 255, 255, 255;
+}
+
+/* 淡橙色背景的左分栏 */
+.callout[data-callout="col2-left-lightorange"] {
+    --callout-color: 178, 122, 64;
+}
+
+/* 白色背景的右分栏 */
+.callout[data-callout="col2-right"] {
+    --callout-color: 255, 255, 255;
+}
+
+/* 淡粉色背景的右分栏 */
+.callout[data-callout="col2-right-pink"] {
+    --callout-color: 178, 22, 164;
+}
+
+/* 其它自定义颜色的标题可在此定义 */
+
+
+/* -------------------分两栏---------------------- */
+
+
+
+
+
+
+/* -------------------分三栏---------------------- */
+
+/* 三栏功能的主要实现---左分栏 */
+.callout[data-callout="col3-left"],
+.callout[data-callout="col3-left-lightorange"],
+.callout[data-callout="col3-left-lightgreen"] {
+    width: calc((100% - 60px) * 0.333333);
+    float: left;
+    margin-right: 30px;
+}
+
+/* 三栏功能的主要实现---右分栏 */
+.callout[data-callout="col3-right"],
+.callout[data-callout="col3-right-pink"] {
+    width: calc((100% - 60px) * 0.333333);
+    float: right;
+}
+
+
+/* 白色背景的左分栏 */
+.callout[data-callout="col3-left"] {
+    --callout-color: 255, 255, 255;
+}
+
+/* 淡橙色背景的左分栏 */
+.callout[data-callout="col3-left-lightorange"] {
+    --callout-color: 178, 122, 64;
+}
+
+/* 淡绿色背景的左分栏 */
+.callout[data-callout="col3-left-lightgreen"] {
+    --callout-color: 99, 188, 76;
+}
+
+/* 白色背景的右分栏 */
+.callout[data-callout="col3-right"] {
+    --callout-color: 255, 255, 255;
+}
+
+/* 淡粉色背景的右分栏 */
+.callout[data-callout="col3-right-pink"] {
+    --callout-color: 178, 22, 164;
+}
+
+/* 其它自定义颜色的标题可在此定义 */
+
+
+/* -------------------分三栏---------------------- */
+
+
+
+
+
+
+/* -------------------分四栏---------------------- */
+
+/* 四栏功能的主要实现---左分栏 */
+.callout[data-callout="col4-left"],
+.callout[data-callout="col4-left-lightorange"],
+.callout[data-callout="col4-left-lightgreen"],
+.callout[data-callout="col4-left-pink"] {
+    width: calc((100% - 90px) * 0.25);
+    float: left;
+    margin-right: 30px;
+}
+
+/* 四栏功能的主要实现---右分栏 */
+.callout[data-callout="col4-right"],
+.callout[data-callout="col4-right-lightyellow"] {
+    width: calc((100% - 90px) * 0.25);
+    float: right;
+}
+
+
+/* 白色背景的左分栏 */
+.callout[data-callout="col4-left"] {
+    --callout-color: 255, 255, 255;
+}
+
+/* 淡橙色背景的左分栏 */
+.callout[data-callout="col4-left-lightorange"] {
+    --callout-color: 178, 155, 64;
+}
+
+/* 淡绿色背景的左分栏 */
+.callout[data-callout="col4-left-lightgreen"] {
+    --callout-color: 99, 188, 76;
+}
+
+/* 淡粉色背景的左分栏 */
+.callout[data-callout="col4-left-pink"] {
+    --callout-color: 178, 22, 164;
+}
+
+/* 白色背景的右分栏 */
+.callout[data-callout="col4-right"] {
+    --callout-color: 255, 255, 255;
+}
+
+/* 淡黄色背景的右分栏 */
+.callout[data-callout="col4-right-lightyellow"] {
+    --callout-color: 139, 65, 06;
+}
+
+/* 其它自定义颜色的标题可在此定义 */
+
+/* -------------------分四栏---------------------- */
+
+
+
+
+
+
+
+
+/* -------------------分五栏---------------------- */
+
+/* 五栏功能的主要实现---左分栏 */
+.callout[data-callout="col5-left"],
+.callout[data-callout="col5-left-lightorange"],
+.callout[data-callout="col5-left-lightgreen"],
+.callout[data-callout="col5-left-lightyellow"],
+.callout[data-callout="col5-left-pink"] {
+    width: calc((100% - 120px) * 0.2);
+    float: left;
+    margin-right: 30px;
+}
+
+/* 五栏功能的主要实现---右分栏 */
+.callout[data-callout="col5-right"],
+.callout[data-callout="col5-right-purple"] {
+    width: calc((100% - 120px) * 0.2);
+    float: right;
+}
+
+
+/* 白色背景的左分栏 */
+.callout[data-callout="col5-left"] {
+    --callout-color: 255, 255, 255;
+}
+
+/* 淡橙色背景的左分栏 */
+.callout[data-callout="col5-left-lightorange"] {
+    --callout-color: 178, 122, 64;
+}
+
+/* 淡绿色背景的左分栏 */
+.callout[data-callout="col5-left-lightgreen"] {
+    --callout-color: 78, 122, 64;
+}
+
+/* 淡黄色背景的左分栏 */
+.callout[data-callout="col5-left-lightyellow"] {
+    --callout-color: 139, 65, 06;
+}
+
+/* 淡粉色背景的左分栏 */
+.callout[data-callout="col5-left-pink"] {
+    --callout-color: 138, 122, 188;
+}
+
+/* 白色背景的右分栏 */
+.callout[data-callout="col5-right"] {
+    --callout-color: 255, 255, 255;
+}
+
+/* 淡紫色背景的右分栏 */
+.callout[data-callout="col5-right-purple"] {
+    --callout-color: 178, 22, 164;
+}
+
+
+/* 其它自定义颜色的标题可在此定义 */
+
+/* -------------------分五栏---------------------- */
+
+
+
+
+
+/* --------------------左小右大的边栏---------------------   */
+
+.callout[data-callout="col-sm-left"] {
+    float: left;
+    width: calc(25% - 10px);
+    margin-right: 30px;
+    border-left: none;
+    box-shadow: none;
+    --callout-color: 89, 78, 126;
+}
+
+.callout[data-callout="col-lg-right"] {
+    float: right;
+    width: calc(75% - 20px);
+    border-left: none;
+    box-shadow: none;
+    --callout-color: 99, 178, 129;
+}
+
+/* --------------------左小右大的边栏---------------------   */
+
+
+
+
+
+/* --------------------左大右小的边栏---------------------   */
+
+.callout[data-callout="col-lg-left"] {
+    float: left;
+    width: calc(75% - 20px);
+    margin-right: 30px;
+    border-left: none;
+    box-shadow: none;
+    --callout-color: 125, 88, 25;
+}
+
+.callout[data-callout="col-sm-right"] {
+    float: right;
+    width: calc(25% - 10px);
+    border-left: none;
+    box-shadow: none;
+    --callout-color: 178, 22, 164;
+}
+
+/* --------------------左大右小的边栏---------------------   */
+
+
+
+
+
+/* --------------------无标题的边栏---------------------   */
+/* 较小的边栏去掉标题栏且可自定义背景颜色 */
+.callout[data-callout="col-bg-left"] {
+    float: left;
+    width: calc(25% - 10px);
+    margin-right: 30px;
+    border-left: none;
+    box-shadow: 0 0.2rem 0.5rem var(--background-modifier-box-shadow);
+    --callout-color: 245, 205, 200;
+    background-color: rgba(var(--callout-color), 0.1) !important;
+}
+
+.callout[data-callout="col-bg-right"] {
+    float: right;
+    width: calc(25% - 10px);
+    border-left: none;
+    --callout-color: 195, 235, 200;
+    box-shadow: 0 0.2rem 0.5rem var(--background-modifier-box-shadow);
+    background-color: rgba(var(--callout-color), 0.1) !important;
+}
+
+/* --------------------无标题的边栏---------------------   */
+
+
+
+
+
+/* --------------------文字对齐---------------------   */
+.callout[data-callout="content-flex"] {
+    border-left: none;
+    border-radius: none;
+    box-shadow: none;
+    margin: 0 0;
+    background-color: #fff;
+    padding: 0;
+
+}
+
+.callout[data-callout="content-flex"] .callout-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 0;
+}
+
+.callout[data-callout="content-flex"] .callout-content>* {
+    flex: 1;
+    margin: 0 0 20px 0;
+}
+
+.callout[data-callout="content-flex"] .callout-content ul {
+    display: flex;
+    padding-left: 20px;
+    margin: 0 0;
+}
+
+.callout[data-callout="content-flex"] .callout-content ul li {
+    flex: 1;
+}
+
+/*  .callout[data-callout="content-flex"] .callout-content ul li p {
+    margin: 0 0 ;
+}
+
+ .callout[data-callout="content-flex"] .callout-content ul li::before{
+    transform: translate(0px, 16px);
+} */
+
+/* --------------------文字对齐---------------------   */
+
+
+
+
+
+
+
+
+
+/* ------------------------------------- 分栏公共属性定义 ------------------------------------- */
+
+/* 有标题背景色---给分栏标题设置背景色 */
+.callout[data-callout="col2-left-lightorange"] .callout-title,
+.callout[data-callout="col2-right-pink"] .callout-title,
+.callout[data-callout="col3-left-lightorange"] .callout-title,
+.callout[data-callout="col3-left-lightgreen"] .callout-title,
+.callout[data-callout="col3-right-pink"] .callout-title,
+.callout[data-callout="col4-left-lightorange"] .callout-title,
+.callout[data-callout="col4-left-lightgreen"] .callout-title,
+.callout[data-callout="col4-left-pink"] .callout-title,
+.callout[data-callout="col4-right-lightyellow"] .callout-title,
+.callout[data-callout="col5-left-lightorange"] .callout-title,
+.callout[data-callout="col5-left-lightgreen"] .callout-title,
+.callout[data-callout="col5-left-lightyellow"] .callout-title,
+.callout[data-callout="col5-left-pink"] .callout-title,
+.callout[data-callout="col5-right-purple"] .callout-title,
+.callout[data-callout="col-sm-left"] .callout-title,
+.callout[data-callout="col-lg-right"] .callout-title,
+.callout[data-callout="col-lg-left"] .callout-title,
+.callout[data-callout="col-sm-right"] .callout-title {
+    background-color: rgba(var(--callout-color), 0.06);
+    padding: 10px 0;
+}
+
+/* 有标题背景色---当标题设置了背景色时设置文字背景色以及文字与边框的左 padding */
+.callout[data-callout="col2-left-lightorange"] .callout-title .callout-title-inner,
+.callout[data-callout="col2-right-pink"] .callout-title .callout-title-inner,
+.callout[data-callout="col3-left-lightorange"] .callout-title .callout-title-inner,
+.callout[data-callout="col3-left-lightgreen"] .callout-title .callout-title-inner,
+.callout[data-callout="col3-right-pink"] .callout-title .callout-title-inner,
+.callout[data-callout="col4-left-lightorange"] .callout-title .callout-title-inner,
+.callout[data-callout="col4-left-lightgreen"] .callout-title .callout-title-inner,
+.callout[data-callout="col4-left-pink"] .callout-title .callout-title-inner,
+.callout[data-callout="col4-right-lightyellow"] .callout-title .callout-title-inner,
+.callout[data-callout="col5-left-lightorange"] .callout-title .callout-title-inner,
+.callout[data-callout="col5-left-lightgreen"] .callout-title .callout-title-inner,
+.callout[data-callout="col5-left-lightyellow"] .callout-title .callout-title-inner,
+.callout[data-callout="col5-left-pink"] .callout-title .callout-title-inner,
+.callout[data-callout="col5-right-purple"] .callout-title .callout-title-inner,
+.callout[data-callout="col-sm-left"] .callout-title .callout-title-inner,
+.callout[data-callout="col-lg-right"] .callout-title .callout-title-inner,
+.callout[data-callout="col-lg-left"] .callout-title .callout-title-inner,
+.callout[data-callout="col-sm-right"] .callout-title .callout-title-inner {
+    color: #000;
+    padding-left: 5px;
+}
+
+
+/* 没有标题背景色---标题背景是白色时使用此项， */
+.callout[data-callout="col2-left"] .callout-title,
+.callout[data-callout="col2-right"] .callout-title,
+.callout[data-callout="col3-left"] .callout-title,
+.callout[data-callout="col3-right"] .callout-title,
+.callout[data-callout="col4-left"] .callout-title,
+.callout[data-callout="col4-right"] .callout-title,
+.callout[data-callout="col5-left"] .callout-title,
+.callout[data-callout="col5-right"] .callout-title {
+    border-bottom: 1px solid #F1F3F5;
+    padding: 10px 0;
+}
+
+
+/* 取消 callout 的 阴影 左边框 背景色等 */
+.callout[data-callout="col2-left"],
+.callout[data-callout="col2-left-lightorange"],
+.callout[data-callout="col2-right"],
+.callout[data-callout="col2-right-pink"],
+.callout[data-callout="col3-left"],
+.callout[data-callout="col3-left-lightorange"],
+.callout[data-callout="col3-left-lightgreen"],
+.callout[data-callout="col3-right"],
+.callout[data-callout="col3-right-pink"],
+.callout[data-callout="col4-left"],
+.callout[data-callout="col4-left-lightorange"],
+.callout[data-callout="col4-left-lightgreen"],
+.callout[data-callout="col4-left-pink"],
+.callout[data-callout="col4-right"],
+.callout[data-callout="col4-right-lightyellow"],
+.callout[data-callout="col5-left"],
+.callout[data-callout="col5-left-lightorange"],
+.callout[data-callout="col5-left-lightgreen"],
+.callout[data-callout="col5-left-lightyellow"],
+.callout[data-callout="col5-left-pink"],
+.callout[data-callout="col5-right"],
+.callout[data-callout="col5-right-purple"],
+.callout[data-callout="col-sm-left"],
+.callout[data-callout="col-lg-right"],
+.callout[data-callout="col-lg-left"],
+.callout[data-callout="col-sm-right"] {
+    box-shadow: none;
+    border-left: none;
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+/* 取消 callout 的 icon */
+.callout[data-callout="col2-left"] .callout-icon,
+.callout[data-callout="col2-left-lightorange"] .callout-icon,
+.callout[data-callout="col2-right"] .callout-icon,
+.callout[data-callout="col2-right-pink"] .callout-icon,
+.callout[data-callout="col3-left"] .callout-icon,
+.callout[data-callout="col3-left-lightorange"] .callout-icon,
+.callout[data-callout="col3-left-lightgreen"] .callout-icon,
+.callout[data-callout="col3-right"] .callout-icon,
+.callout[data-callout="col3-right-pink"] .callout-icon,
+.callout[data-callout="col4-left"] .callout-icon,
+.callout[data-callout="col4-left-lightorange"] .callout-icon,
+.callout[data-callout="col4-left-lightgreen"] .callout-icon,
+.callout[data-callout="col4-left-pink"] .callout-icon,
+.callout[data-callout="col4-right"] .callout-icon,
+.callout[data-callout="col4-right-lightyellow"] .callout-icon,
+.callout[data-callout="col5-left"] .callout-icon,
+.callout[data-callout="col5-left-lightorange"] .callout-icon,
+.callout[data-callout="col5-left-lightgreen"] .callout-icon,
+.callout[data-callout="col5-left-lightyellow"] .callout-icon,
+.callout[data-callout="col5-left-pink"] .callout-icon,
+.callout[data-callout="col5-right"] .callout-icon,
+.callout[data-callout="col5-right-purple"] .callout-icon,
+.callout[data-callout="col-sm-left"] .callout-icon,
+.callout[data-callout="col-lg-right"] .callout-icon,
+.callout[data-callout="col-lg-left"] .callout-icon,
+.callout[data-callout="col-sm-right"] .callout-icon,
+.callout[data-callout="col-bg-left"] .callout-icon,
+.callout[data-callout="col-bg-right"] .callout-icon,
+.callout[data-callout="content-flex"] .callout-icon {
+    display: none;
+}
+
+
+/* callout 里的 > 使用时不设置 border-left 以及 左 padding */
+.callout[data-callout="col2-left"] blockquote,
+.callout[data-callout="col2-left-lightorange"] blockquote,
+.callout[data-callout="col2-right"] blockquote,
+.callout[data-callout="col2-right-pink"] blockquote,
+.callout[data-callout="col3-left"] blockquote,
+.callout[data-callout="col3-left-lightorange"] blockquote,
+.callout[data-callout="col3-left-lightgreen"] blockquote,
+.callout[data-callout="col3-right"] blockquote,
+.callout[data-callout="col3-right-pink"] blockquote,
+.callout[data-callout="col4-left"] blockquote,
+.callout[data-callout="col4-left-lightorange"] blockquote,
+.callout[data-callout="col4-left-lightgreen"] blockquote,
+.callout[data-callout="col4-left-pink"] blockquote,
+.callout[data-callout="col4-right"] blockquote,
+.callout[data-callout="col4-right-lightyellow"] blockquote,
+.callout[data-callout="col5-left"] blockquote,
+.callout[data-callout="col5-left-lightorange"] blockquote,
+.callout[data-callout="col5-left-lightgreen"] blockquote,
+.callout[data-callout="col5-left-lightyellow"] blockquote,
+.callout[data-callout="col5-left-pink"] blockquote,
+.callout[data-callout="col5-right"] blockquote,
+.callout[data-callout="col5-right-purple"] blockquote,
+.callout[data-callout="col-sm-left"] blockquote,
+.callout[data-callout="col-lg-right"] blockquote,
+.callout[data-callout="col-lg-left"] blockquote,
+.callout[data-callout="col-sm-right"] blockquote,
+.callout[data-callout="col-bg-left"] blockquote,
+.callout[data-callout="col-bg-right"] blockquote {
+    border-left: none;
+    padding-left: 0;
+}
+
+
+/* 分栏里的标题的颜色 */
+.callout[data-callout="col2-left"] .callout-title-inner,
+.callout[data-callout="col2-right"] .callout-title-inner,
+.callout[data-callout="col3-left"] .callout-title-inner,
+.callout[data-callout="col3-right"] .callout-title-inner,
+.callout[data-callout="col4-left"] .callout-title-inner,
+.callout[data-callout="col4-right"] .callout-title-inner,
+.callout[data-callout="col5-left"] .callout-title-inner,
+.callout[data-callout="col5-right"] .callout-title-inner {
+    color: #000;
+}
+
+
+/* 边栏设置左右边距 */
+.callout[data-callout="col-sm-left"] .callout-content,
+.callout[data-callout="col-lg-right"] .callout-content,
+.callout[data-callout="col-lg-left"] .callout-content,
+.callout[data-callout="col-sm-right"] .callout-content,
+.callout[data-callout="col-bg-left"] .callout-content,
+.callout[data-callout="col-bg-right"] .callout-content {
+    padding: 0 15px;
+}
+
+
+/* 所有分栏取消左缩进 */
+.callout[data-callout="col2-left"] .callout-content ul,
+.callout[data-callout="col2-left-lightorange"] .callout-content ul,
+.callout[data-callout="col2-right"] .callout-content ul,
+.callout[data-callout="col2-right-pink"] .callout-content ul,
+.callout[data-callout="col3-left"] .callout-content ul,
+.callout[data-callout="col3-left-lightorange"] .callout-content ul,
+.callout[data-callout="col3-left-lightgreen"] .callout-content ul,
+.callout[data-callout="col3-right"] .callout-content ul,
+.callout[data-callout="col3-right-pink"] .callout-content ul,
+.callout[data-callout="col4-left"] .callout-content ul,
+.callout[data-callout="col4-left-lightorange"] .callout-content ul,
+.callout[data-callout="col4-left-lightgreen"] .callout-content ul,
+.callout[data-callout="col4-left-pink"] .callout-content ul,
+.callout[data-callout="col4-right"] .callout-content ul,
+.callout[data-callout="col4-right-lightyellow"] .callout-content ul,
+.callout[data-callout="col5-left"] .callout-content ul,
+.callout[data-callout="col5-left-lightorange"] .callout-content ul,
+.callout[data-callout="col5-left-lightgreen"] .callout-content ul,
+.callout[data-callout="col5-left-lightyellow"] .callout-content ul,
+.callout[data-callout="col5-left-pink"] .callout-content ul,
+.callout[data-callout="col5-right"] .callout-content ul,
+.callout[data-callout="col5-right-purple"] .callout-content ul,
+.callout[data-callout="col-sm-left"] .callout-content ul,
+.callout[data-callout="col-lg-right"] .callout-content ul,
+.callout[data-callout="col-lg-left"] .callout-content ul,
+.callout[data-callout="col-sm-right"] .callout-content ul,
+.callout[data-callout="col-bg-left"] .callout-content ul,
+.callout[data-callout="col-bg-right"] .callout-content ul {
+    padding-inline-start: 0 !important;
+}
+
+
+/* 不显示小边栏及文本对齐里的标题 */
+.callout[data-callout="col-bg-left"] .callout-title,
+.callout[data-callout="col-bg-right"] .callout-title,
+.callout[data-callout="content-flex"] .callout-title {
+    display: none;
+}
+
+/* 有背景的边栏里的引用取消缩进 */
+.callout[data-callout="col-bg-left"] blockquote,
+.callout[data-callout="col-bg-right"] blockquote {
+    margin-block-start: 0;
+}
+
+
+/* 所有分栏里的缩进设置 */
+.callout {
+    border: 2px solid #eee !important;
+    box-shadow: 1px 1px 2px 2px rgb(0 0 0 / 30%), -1px -1px 2px 2px rgb(0 0 0 / 30%) !important;
+    /* padding-left: 0; */
+}
+
+/* callout 中的 ul 缩进改为 32px */
+.callout .callout-content ul {
+    padding-inline-start: 32px !important;
+}
+
+ul>li.task-list-item .task-list-item-checkbox {
+    margin-inline-start: 0;
+}
+
+
+/* 分栏里的折叠菜单按钮颜色 */
+
+.callout .callout-fold {
+    color: #000;
+}
+
+
+/* 取消这些元素的浮动效果 */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+ul,
+ol {
+    clear: both;
+}
+
+
+/* 实时编辑模式下取消分栏浮动 */
+.markdown-source-view.mod-cm6.is-readable-line-width .cm-embed-block.cm-callout>.callout {
+    float: none;
+}
+
+
+
+
+/*---------------------------------------- 暗黑模式下样式-------------------------------------------- */
+.theme-dark .callout[data-callout="col2-left"],
+.theme-dark .callout[data-callout="col2-left-lightorange"],
+.theme-dark .callout[data-callout="col2-right"],
+.theme-dark .callout[data-callout="col2-right-pink"],
+.theme-dark .callout[data-callout="col3-left"],
+.theme-dark .callout[data-callout="col3-left-lightorange"],
+.theme-dark .callout[data-callout="col3-left-lightgreen"],
+.theme-dark .callout[data-callout="col3-right"],
+.theme-dark .callout[data-callout="col3-right-pink"],
+.theme-dark .callout[data-callout="col4-left"],
+.theme-dark .callout[data-callout="col4-left-lightorange"],
+.theme-dark .callout[data-callout="col4-left-lightgreen"],
+.theme-dark .callout[data-callout="col4-left-pink"],
+.theme-dark .callout[data-callout="col4-right"],
+.theme-dark .callout[data-callout="col4-right-lightyellow"],
+.theme-dark .callout[data-callout="col5-left"],
+.theme-dark .callout[data-callout="col5-left-lightorange"],
+.theme-dark .callout[data-callout="col5-left-lightgreen"],
+.theme-dark .callout[data-callout="col5-left-lightyellow"],
+.theme-dark .callout[data-callout="col5-left-pink"],
+.theme-dark .callout[data-callout="col5-right"],
+.theme-dark .callout[data-callout="col5-right-purple"],
+.theme-dark .callout[data-callout="col-sm-left"],
+.theme-dark .callout[data-callout="col-lg-right"],
+.theme-dark .callout[data-callout="col-lg-left"],
+.theme-dark .callout[data-callout="col-sm-right"] {
+    background-color: transparent;
+}
+
+.theme-dark .callout[data-callout="col2-left"] .callout-title-inner,
+.theme-dark .callout[data-callout="col2-right"] .callout-title-inner,
+.theme-dark .callout[data-callout="col3-left"] .callout-title-inner,
+.theme-dark .callout[data-callout="col3-right"] .callout-title-inner,
+.theme-dark .callout[data-callout="col4-left"] .callout-title-inner,
+.theme-dark .callout[data-callout="col4-right"] .callout-title-inner,
+.theme-dark .callout[data-callout="col5-left"] .callout-title-inner,
+.theme-dark .callout[data-callout="col5-right"] .callout-title-inner {
+    color: #d1d1d1;
+}
+
+
+.theme-dark .callout[data-callout="col2-left-lightorange"] .callout-title .callout-title-inner,
+.theme-dark .callout[data-callout="col2-right-pink"] .callout-title .callout-title-inner,
+.theme-dark .callout[data-callout="col3-left-lightorange"] .callout-title .callout-title-inner,
+.theme-dark .callout[data-callout="col3-left-lightgreen"] .callout-title .callout-title-inner,
+.theme-dark .callout[data-callout="col3-right-pink"] .callout-title .callout-title-inner,
+.theme-dark .callout[data-callout="col4-left-lightorange"] .callout-title .callout-title-inner,
+.theme-dark .callout[data-callout="col4-left-lightgreen"] .callout-title .callout-title-inner,
+.theme-dark .callout[data-callout="col4-left-pink"] .callout-title .callout-title-inner,
+.theme-dark .callout[data-callout="col4-right-lightyellow"] .callout-title .callout-title-inner,
+.theme-dark .callout[data-callout="col5-left-lightorange"] .callout-title .callout-title-inner,
+.theme-dark .callout[data-callout="col5-left-lightgreen"] .callout-title .callout-title-inner,
+.theme-dark .callout[data-callout="col5-left-lightyellow"] .callout-title .callout-title-inner,
+.theme-dark .callout[data-callout="col5-left-pink"] .callout-title .callout-title-inner,
+.theme-dark .callout[data-callout="col5-right-purple"] .callout-title .callout-title-inner,
+.theme-dark .callout[data-callout="col-sm-left"] .callout-title .callout-title-inner,
+.theme-dark .callout[data-callout="col-lg-right"] .callout-title .callout-title-inner,
+.theme-dark .callout[data-callout="col-lg-left"] .callout-title .callout-title-inner,
+.theme-dark .callout[data-callout="col-sm-right"] .callout-title .callout-title-inner {
+    color: #d1d1d1;
+}
+
+
+.theme-dark .callout[data-callout="col2-left"] .callout-title,
+.theme-dark .callout[data-callout="col2-right"] .callout-title,
+.theme-dark .callout[data-callout="col3-left"] .callout-title,
+.theme-dark .callout[data-callout="col3-right"] .callout-title,
+.theme-dark .callout[data-callout="col4-left"] .callout-title,
+.theme-dark .callout[data-callout="col4-right"] .callout-title,
+.theme-dark .callout[data-callout="col5-left"] .callout-title,
+.theme-dark .callout[data-callout="col5-right"] .callout-title {
+    border-bottom: none;
+    background-color: rgba(88, 99, 100, 0.1);
+}
+
+
+.theme-dark .callout .callout-fold {
+    color: #d1d1d1;
+}
+
+.theme-dark .callout[data-callout="content-flex"] {
+    background-color: transparent;
+}
+
+
+/* ------------------------------------- 分栏公共属性定义 ------------------------------------- */
