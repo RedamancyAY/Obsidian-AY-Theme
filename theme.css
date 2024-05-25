@@ -340,9 +340,11 @@ blockquote strong {
     text-decoration: none !important;
 }
 
-span.external-link {
+
+/* must disable this to show note-toolbar */
+/* span.external-link {
     display: none !important;
-}
+} */
 
 .is-live-preview .cm-line:not(.cm-active) .cm-link,
 .markdown-preview-view .external-link {
