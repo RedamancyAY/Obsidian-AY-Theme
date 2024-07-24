@@ -1,3 +1,6 @@
+@import url('./table.css');
+
+
 body {
     --font-adaptive-normal: 18px;
     --line-height: 1.65;
