@@ -599,9 +599,97 @@ img.top-section-img:hover {
     border-right: 1px solid var(--card-sep-line-color);
 }
 
+/* callout */
+.callout[data-callout="yellow"] {
+    --callout-color: 254, 234, 210;
+}
+
+.callout[data-callout="yellow"] {
+    border: 1px solid rgb(254, 212, 164);
+    color: rgb(222, 120, 2);
+    border-radius: 5px;
+    background-color: rgba(var(--callout-color));
+}
+
+.callout[data-callout="yellow"] .callout-title {
+    display: none;
+}
+.callout[data-callout="blue"] {
+    --callout-color: 225, 234, 255;
+}
+
+.callout[data-callout="blue"] {
+    border: 1px solid rgb(130, 167, 252);
+    color: rgb(0, 2, 7);
+    border-radius: 5px;
+    background-color: rgba(var(--callout-color));
+}
+
+.callout[data-callout="blue"] .callout-title {
+    display: none;
+}
 
 
+.callout[data-callout="red"] {
+    --callout-color: 253, 226, 226;
+}
 
+.callout[data-callout="red"] {
+    border: 1px solid rgb(249, 142, 139);
+    color: rgb(216, 57, 49);
+    border-radius: 5px;
+    background-color: rgba(var(--callout-color));
+}
+
+.callout[data-callout="red"] .callout-title {
+    display: none;
+}
+
+
+.callout[data-callout="green"] {
+    --callout-color: 217, 245, 214;
+}
+
+.callout[data-callout="green"] {
+    border: 1px solid rgb(142, 224, 133);
+    color: rgb(46, 161, 33);
+    border-radius: 5px;
+    background-color: rgba(var(--callout-color));
+}
+
+.callout[data-callout="green"] .callout-title {
+    display: none;
+}
+
+.callout[data-callout="purple"] {
+    --callout-color: 236, 226, 254;
+}
+
+.callout[data-callout="purple"] {
+    border: 1px solid rgb(173, 130, 247);
+    color: rgb(100, 37, 208);
+    border-radius: 5px;
+    background-color: rgba(var(--callout-color));
+}
+
+.callout[data-callout="purple"] .callout-title {
+    display: none;
+}
+
+.callout[data-callout="gray"] {
+    --callout-color: 245, 246, 247;
+}
+
+.callout[data-callout="gray"] {
+    border: 1px solid rgb(187, 191, 196);
+    color: rgb(143, 149, 158);
+    border-radius: 5px;
+    background-color: rgba(var(--callout-color));
+}
+
+.callout[data-callout="gray"] .callout-title {
+    display: none;
+}
 
 
 /* @settings
